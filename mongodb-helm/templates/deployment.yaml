@@ -10,8 +10,8 @@ metadata:
     code: mongo-db-rs-dev
 spec:
   replicas: 1
-  matchLabes:
-    selectLabels:
+  selector:
+    matchLabes:
       code: mongo-db-rs-dev
   template:
     metadata:
