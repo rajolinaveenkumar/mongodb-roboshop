@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: mongodb-pod
-        image: "{{ .Values.deployment.image_url}}:{{ image_version }}"
+        image: "{{ .Values.deployment.image_url}}:{{ .Values.deployment.image_version }}"
         ports:
         - containerPort: 27017
         imagePullPolicy: Always
